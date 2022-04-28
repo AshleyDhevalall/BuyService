@@ -39,7 +39,6 @@ jobs:
 
     environment:
       name: PRE-PROD
-      url: ${{ steps.deploywebapp.outputs.webapp-url }}
 
     steps:
     - name: Download a Build Artifact
