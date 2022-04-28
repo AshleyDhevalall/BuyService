@@ -24,10 +24,4 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Publish
-      run: dotnet publish BuyService/BuyService.csproj -c Release -o buyservice
-    - name: Upload a Build Artifact
-      uses: actions/upload-artifact@v2.2.2
-      with:
-        name: buyservice
-        path: BuyService/buyservice/**
-        if-no-files-found: error
+      run: dotnet publish BuyService/BuyService.csproj -c Release
