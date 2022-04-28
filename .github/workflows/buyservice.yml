@@ -24,7 +24,7 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Publish
-      run: dotnet publish BuyService/BuyService.csproj -c Release --output /dist
+      run: dotnet publish BuyService/BuyService.csproj -c Release --output --output "../dist"
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2.2.2
       with:
