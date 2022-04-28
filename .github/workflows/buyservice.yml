@@ -27,8 +27,8 @@ jobs:
       run: dotnet publish BuyService/BuyService.csproj -c Release
     - name: Create the package
       run: dotnet pack --configuration Release BuyService/BuyService.csproj
-    - name: Upload a Build Artifact
+    - name: Upload package
       uses: actions/upload-artifact@v2.2.2
       with:
         name: buyservice
-        path: /home/runner/work/BuyService/BuyService/BuyService/bin/Release/
+        path: /home/runner/work/BuyService/BuyService/BuyService/bin/Release/*.nupkg
