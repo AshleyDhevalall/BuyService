@@ -24,11 +24,11 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Publish
-      run: dotnet publish BuyService/BuyService.csproj -c Release --output "../dist"
+      run: dotnet publish BuyService/BuyService.csproj -c Release
     - name: Create the package
       run: dotnet pack --configuration Release BuyService/BuyService.csproj
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2.2.2
       with:
         name: buyservice
-        path: /home/runner/work/BuyService/BuyService/BuyService/bin/Release/net5.0/dist/
+        path: /home/runner/work/BuyService/BuyService/BuyService/bin/Release/
