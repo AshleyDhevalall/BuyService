@@ -32,3 +32,17 @@ jobs:
       with:
         name: buyservice
         path: /home/runner/work/BuyService/BuyService/BuyService/bin/Release/*.nupkg
+        
+  deploy_staging:
+    needs: build
+    runs-on: ubuntu-latest
+
+    environment:
+      name: PRE-PROD
+      url: ${{ steps.deploywebapp.outputs.webapp-url }}
+
+    steps:
+    - name: Download a Build Artifact
+      uses: actions/download-artifact@v2.0.8
+      with:
+        name: buyservice
