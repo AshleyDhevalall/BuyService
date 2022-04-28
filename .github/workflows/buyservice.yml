@@ -32,3 +32,8 @@ jobs:
         path: /home/runner/work/BuyService/dist/
     - name: Create the package
       run: dotnet pack --configuration Release BuyService/BuyService.csproj
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v2.2.2
+      with:
+        name: buyservice
+        path: /home/runner/work/BuyService/BuyService/BuyService/bin/Release/net5.0/dist/
