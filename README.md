@@ -46,3 +46,9 @@ If you cannot see the data from the container in your browser, make sure there a
 Visual Studio launches the Kestrel web server.
 
 The Swagger page /swagger/index.html is displayed.
+
+https://docs.microsoft.com/en-us/aspnet/core/tutorials/min-web-api?view=aspnetcore-6.0&tabs=visual-studio-code
+https://jakeydocs.readthedocs.io/en/latest/tutorials/first-web-api.html
+https://www.toptal.com/asp-dot-net/asp-net-web-api-tutorial
+https://code.visualstudio.com/docs/containers/quickstart-aspnet-core
+https://docs.microsoft.com/en-us/dotnet/core/docker/build-container?tabs=windows
