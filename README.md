@@ -1,6 +1,12 @@
 # BuyService
 Sample buy service
 
+### Prerequisites
+* [Docker Desktop for Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
+* [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-3.1.405-windows-x64-installer)
+* [SonarQube](https://www.sonarqube.org/)
+* [Sonar Scanner](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/)
+* 
 ## Prerequisites
 - [Docker Community Edition]([https://www.docker.com/](https://www.docker.com/products/docker-desktop))
 
